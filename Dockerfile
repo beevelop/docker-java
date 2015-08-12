@@ -1,7 +1,9 @@
-FROM ubuntu:trusty
+FROM ubuntu:wily
 MAINTAINER Maik Hummel <m@ikhummel.com>
 
 RUN apt-get update -y
+
+# required to use add-apt-repository
 RUN apt-get install -y software-properties-common
 
 # use WebUpd8 PPA
