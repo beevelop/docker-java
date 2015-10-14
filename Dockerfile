@@ -16,7 +16,7 @@ RUN apt-get update -y && \
 
     # clean up
     apt-get remove software-properties-common -y && \
-    apt-get autoremove -y # let's test dockerhub's fail notifications
+    apt-get autoremove -y && \
     apt-get clean
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
