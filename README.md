@@ -4,9 +4,8 @@
 [![Beevelop](https://links.beevelop.com/honey-badge)](https://beevelop.com)
 
 # Java 8 (1.8.0_66)
-## based on Ubuntu 15.10 (Wily Werewolf)
------
-
+### based on Ubuntu 15.10 (Wily Werewolf)
+----
 ### Pull from Docker Hub
 ```
 docker pull beevelop/java:latest
@@ -20,4 +19,9 @@ docker build -t beevelop/java github.com/beevelop/docker-java
 ### Run image
 ```
 docker run -it beevelop/java bash
+```
+
+### Use as base image
+```Dockerfile
+FROM beevelop/java:latest
 ```
