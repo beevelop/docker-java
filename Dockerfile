@@ -1,4 +1,4 @@
-FROM ubuntu:wily
+FROM ubuntu-debootstrap:wily
 MAINTAINER Maik Hummel <m@ikhummel.com>
     
     # required to use add-apt-repository
