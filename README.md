@@ -3,6 +3,7 @@
 [![ImageLayer](https://badge.imagelayers.io/beevelop/java:latest.svg)](https://imagelayers.io/?images=beevelop/java:latest)
 [![Beevelop](https://links.beevelop.com/honey-badge)](https://beevelop.com)
 
+![beevelop/java](/icon.png?raw=true)
 # Java 8 (1.8.0_66)
 ### based on Ubuntu 15.10 (Wily Werewolf)
 ----
