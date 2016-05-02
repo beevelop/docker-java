@@ -1,4 +1,4 @@
-FROM ubuntu-debootstrap:wily
+FROM beevelop/base:xenial
 MAINTAINER Maik Hummel <m@ikhummel.com>
     
     # required to use add-apt-repository
