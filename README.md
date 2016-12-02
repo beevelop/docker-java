@@ -4,7 +4,7 @@
 [![Beevelop](https://links.beevelop.com/honey-badge)](https://beevelop.com)
 
 ![beevelop/java](/icon.png?raw=true)
-# Java 8 (1.8.0_91)
+# Java 8 (1.8.0_111)
 ### based on Ubuntu 16.04 (Xenial Xerus)
 ----
 ### Pull from Docker Hub
