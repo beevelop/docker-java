@@ -1,7 +1,11 @@
-[![Travis](https://img.shields.io/travis/beevelop/docker-java.svg?style=flat-square)](https://travis-ci.org/beevelop/docker-java)
-[![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/java.svg?style=flat-square)](https://links.beevelop.com/d-java)
-[![ImageLayer](https://badge.imagelayers.io/beevelop/java:latest.svg)](https://imagelayers.io/?images=beevelop/java:latest)
+[![Travis](https://shields.beevelop.com/travis/beevelop/docker-java.svg?style=flat-square)](https://travis-ci.org/beevelop/docker-java)
+[![Pulls](https://shields.beevelop.com/docker/pulls/beevelop/java.svg?style=flat-square)](https://links.beevelop.com/d-java)
+[![Layers](https://shields.beevelop.com/docker/image/layers/beevelop/java/latest.svg?style=flat-square)](https://links.beevelop.com/d-java)
+[![Size](https://shields.beevelop.com/docker/image/size/beevelop/java/latest.svg?style=flat-square)](https://links.beevelop.com/d-java)
+[![Release](https://shields.beevelop.com/github/release/beevelop/docker-java.svg?style=flat-square)](https://github.com/beevelop/docker-java/releases)
+![Badges](https://shields.beevelop.com/badge/badges-7-brightgreen.svg?style=flat-square)
 [![Beevelop](https://links.beevelop.com/honey-badge)](https://beevelop.com)
+
 
 ![beevelop/java](/icon.png?raw=true)
 # Java 8 (1.8.0_111)
