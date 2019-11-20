@@ -8,8 +8,9 @@
 
 
 ![beevelop/java](/icon.png?raw=true)
-# Java 8 (1.8.0_111)
+# Java / OpenJDK 8 (1.8.0_222)
 ### based on Ubuntu 16.04 (Xenial Xerus)
+> ⚠ This image formerly used the Oracle Java version. But due the license changes since April 2019, it's not longer feasible to rely on. This image is now using OpenJDK 8.
 ----
 ### Pull from Docker Hub
 ```
