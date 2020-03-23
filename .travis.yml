@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - docker build -t beevelop/java .
-  - docker run -d beevelop/java
+  - docker build -t bee .
+  - docker run -d bee
   - docker ps -a
-  - docker run beevelop/java /bin/sh -c "java -version"
+  - docker run bee /bin/sh -c "java -version"
