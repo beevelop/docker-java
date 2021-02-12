@@ -1,4 +1,3 @@
-[![Travis](https://shields.beevelop.com/travis/beevelop/docker-java.svg?style=flat-square)](https://travis-ci.org/beevelop/docker-java)
 [![Pulls](https://shields.beevelop.com/docker/pulls/beevelop/java.svg?style=flat-square)](https://links.beevelop.com/d-java)
 [![Layers](https://shields.beevelop.com/docker/image/layers/beevelop/java/latest.svg?style=flat-square)](https://links.beevelop.com/d-java)
 [![Size](https://shields.beevelop.com/docker/image/size/beevelop/java/latest.svg?style=flat-square)](https://links.beevelop.com/d-java)
@@ -8,8 +7,8 @@
 
 
 ![beevelop/java](/icon.png?raw=true)
-# Java / OpenJDK 8 (1.8.0_242)
-### based on Ubuntu 18.04
+# Java / OpenJDK 11.0.10
+### based on Ubuntu 20.04.
 > ⚠ This image formerly used the Oracle Java version. But due the license changes since April 2019, it's not longer feasible to rely on. This image is now using OpenJDK 8.
 ----
 ### Pull from Docker Hub
