@@ -25,16 +25,10 @@ LABEL maintainer="Maik Hummel <hi@beevelop.com>" \
   org.opencontainers.image.source="https://github.com/beevelop/docker-java.git"
 
 # required to use add-apt-repository
-RUN buildDeps='software-properties-common'; \
-  set -x && \
-  apt-get update && apt-get install -y $buildDeps --no-install-recommends && \
-  add-apt-repository ppa:openjdk-r/ppa -y && \
-  apt-get update -y && \
-  apt-get install -y openjdk-8-jdk && \
-  java -version && \
-  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-  apt-get purge -y --auto-remove $buildDeps && \
-  apt-get autoremove -y && apt-get clean && \
-  java -version
+RUN apt-get update && \
+    apt-get -y install default-jre-headless && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+    java -version
 
-ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
+ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
