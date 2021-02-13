@@ -11,7 +11,7 @@
 
 ### based on Ubuntu 20.04.
 
-> ⚠ This image formerly used the Oracle Java version. But due the license changes since April 2019, it's not longer feasible to rely on. This image is now using OpenJDK 11.
+> ⚠ This image formerly used the Oracle Java version. But due the license changes since April 2019, it's not longer feasible to rely on. This image is now using OpenJDK 8.
 
 ---
 
