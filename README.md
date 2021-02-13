@@ -5,28 +5,36 @@
 ![Badges](https://shields.beevelop.com/badge/badges-7-brightgreen.svg?style=flat-square)
 [![Beevelop](https://links.beevelop.com/honey-badge)](https://beevelop.com)
 
-
 ![beevelop/java](/icon.png?raw=true)
-# Java / OpenJDK 11.0.10
+
+# Java / OpenJDK 1.8.0
+
 ### based on Ubuntu 20.04.
+
 > ⚠ This image formerly used the Oracle Java version. But due the license changes since April 2019, it's not longer feasible to rely on. This image is now using OpenJDK 11.
-----
+
+---
+
 ### Pull from Docker Hub
+
 ```
 docker pull beevelop/java:latest
 ```
 
 ### Build from GitHub
+
 ```
 docker build -t beevelop/java github.com/beevelop/docker-java
 ```
 
 ### Run image
+
 ```
 docker run -it beevelop/java bash
 ```
 
 ### Use as base image
+
 ```Dockerfile
 FROM beevelop/java:latest
 ```
