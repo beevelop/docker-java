@@ -7,7 +7,7 @@
 
 ![beevelop/java](/icon.png?raw=true)
 
-# Java / OpenJDK 11.0.10
+# Java / OpenJDK 1.8.0
 
 ### based on Ubuntu 20.04.
 
