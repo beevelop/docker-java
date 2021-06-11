@@ -12,32 +12,29 @@
 
 # Java / OpenJDK 1.8.0
 
-### based on Ubuntu 20.04.
+### Pull, build or run this image
+```bash
+# pull the most recent tag / release
+docker pull beevelop/java:v2021.06.1
 
-> ⚠ This image formerly used the Oracle Java version. But due the license changes since April 2019, it's not longer feasible to rely on. This image is now using OpenJDK 8.
+# or run the image interactively
+docker run --rm --name beevelop -it beevelop/java:v2021.06.1 bash
+
+# or build the image from GitHub
+docker build -t beevelop/java github.com/beevelop/docker-base
+```
+
+### Or use as base image
+```Dockerfile
+FROM beevelop/java:v2021.06.1
+```
 
 ---
 
-### Pull from Docker Hub
+![Beevelop's Docker Image Hierarchy](https://gist.githubusercontent.com/beevelop/b0cddab7209a683c77560d06ff00bc8e/raw/15429ee1d02e2c4dc019b760ca8c7ceff5911b82/hierarchy.png)
 
-```
-docker pull beevelop/java:latest
-```
+---
 
-### Build from GitHub
+### Use tags where possible, because...
 
-```
-docker build -t beevelop/java github.com/beevelop/docker-java
-```
-
-### Run image
-
-```
-docker run -it beevelop/java bash
-```
-
-### Use as base image
-
-```Dockerfile
-FROM beevelop/java:latest
-```
+![One does not simply use latest](https://i.imgflip.com/1fgwxr.jpg)
