@@ -17,11 +17,11 @@
 ### Pull, build or run this image
 
 ```bash
-# pull the most recent tag / release
-docker pull beevelop/java:v2023.01.1
+# pull the most recent tag / release    
+docker pull beevelop/java:v2023.10.1
 
 # or run the image interactively
-docker run --rm --name beevelop -it beevelop/java:v2023.01.1 bash
+docker run --rm --name beevelop -it beevelop/java:v2023.10.1 bash
 
 # or build the image from GitHub
 docker build -t beevelop/java github.com/beevelop/docker-base
