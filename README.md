@@ -10,18 +10,18 @@
 
 ![beevelop/java](/icon.png?raw=true)
 
-# Java / OpenJDK 11.0
+# Java / OpenJDK 17.0
 
-> ⚠️ Due to the slowly approaching EOL of Java 8 we are switching to Java 11. Please check your toolchain for compability before upgrading to the v2023.* releases.
+> ⚠️ Due to the approaching EOL of Java 11 we are switching to Java 17. Please check your toolchain for compability before upgrading to the v2023.12.* or v2024.* releases.
 
 ### Pull, build or run this image
 
 ```bash
 # pull the most recent tag / release    
-docker pull beevelop/java:v2023.10.1
+docker pull beevelop/java:v2023.12.1
 
 # or run the image interactively
-docker run --rm --name beevelop -it beevelop/java:v2023.10.1 bash
+docker run --rm --name beevelop -it beevelop/java:v2023.12.1 bash
 
 # or build the image from GitHub
 docker build -t beevelop/java github.com/beevelop/docker-base
@@ -30,7 +30,7 @@ docker build -t beevelop/java github.com/beevelop/docker-base
 ### Or use as base image
 
 ```Dockerfile
-FROM beevelop/java:v2022.06.1
+FROM beevelop/java:v2023.12.1
 ```
 
 ---
