@@ -3,8 +3,10 @@ updates:
 - package-ecosystem: "github-actions"
   directory: "/"
   schedule:
-    interval: "weekly"
-    day: "wednesday"
-    time: "00:49"
-    timezone: "Europe/Berlin"
+    interval: "daily"
+  open-pull-requests-limit: 1
+- package-ecosystem: "docker"
+  directory: "/"
+  schedule:
+    interval: "daily"
   open-pull-requests-limit: 1
