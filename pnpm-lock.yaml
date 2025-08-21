@@ -7,11 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@mulrajgupta208/release-it-calver-plugin':
         specifier: ^1.0.7
         version: 1.0.7(release-it@17.11.0)
-    devDependencies:
       '@release-it/conventional-changelog':
         specifier: ^8.0.0
         version: 8.0.2(release-it@17.11.0)
