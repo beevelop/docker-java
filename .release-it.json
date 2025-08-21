@@ -14,7 +14,7 @@
     "publish": false
   },
   "plugins": {
-    "release-it-calver-plugin": {
+    "@mulrajgupta208/release-it-calver-plugin": {
       "format": "YYYY.MM.MICRO"
     },
     "@release-it/conventional-changelog": {
