@@ -42,3 +42,23 @@ FROM beevelop/java:v2023.12.1
 ### Use tags where possible, because...
 
 ![One does not simply use latest](https://i.imgflip.com/1fgwxr.jpg)
+
+## Quick Release
+
+Create a new release with calendar versioning (vYYYY.MM.MICRO):
+
+```bash
+# Create and push tag
+git tag "v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" && git push origin --tags
+
+# Create GitHub release with auto-generated notes
+gh release create "v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" --generate-notes
+
+# Open the release page in browser
+gh release view "v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" --web
+```
+
+Or run all at once:
+```bash
+TAG="v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" && git tag $TAG && git push origin --tags && gh release create $TAG --generate-notes && gh release view $TAG --web
+```
