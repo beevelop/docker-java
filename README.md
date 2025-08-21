@@ -12,7 +12,7 @@
 
 # Java / OpenJDK 17.0
 
-> ⚠️ Due to the approaching EOL of Java 11 we are switching to Java 17. Please check your toolchain for compability before upgrading to the v2023.12.* or v2024.* releases.
+> ⚠️ Due to the approaching EOL of Java 11 we switched to Java 17. Please check your toolchain for compatibility before upgrading to the v2024.* releases.
 
 ### Pull, build or run this image
 
@@ -24,7 +24,7 @@ docker pull beevelop/java:v2023.12.1
 docker run --rm --name beevelop -it beevelop/java:v2023.12.1 bash
 
 # or build the image from GitHub
-docker build -t beevelop/java github.com/beevelop/docker-base
+docker build -t beevelop/java github.com/beevelop/docker-java
 ```
 
 ### Or use as base image
