@@ -12,8 +12,8 @@ env:
 
 jobs:
   main:
-    runs-on: ubuntu-20.04
-    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Check out the repo
         uses: actions/checkout@v5
@@ -55,7 +55,7 @@ jobs:
           cache-from: type=local,src=${{ github.workspace }}/cache
           cache-to: type=local,dest=${{ github.workspace }}/cache
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.28.0
         with:
           image-ref: ${{ env.imageName }}:${{ steps.docker_meta.outputs.version }}
           format: "template"
