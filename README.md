@@ -43,22 +43,24 @@ FROM beevelop/java:v2023.12.1
 
 ![One does not simply use latest](https://i.imgflip.com/1fgwxr.jpg)
 
-## Quick Release
+## Automated Release
 
-Create a new release with calendar versioning (vYYYY.MM.MICRO):
+Create a new release with calendar versioning (vYYYY.MM.MICRO) using the universal Bocker Release tool:
 
 ```bash
-# Create and push tag
-git tag "v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" && git push origin --tags
-
-# Create GitHub release with auto-generated notes
-gh release create "v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" --generate-notes
-
-# Open the release page in browser
-gh release view "v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" --web
+bocker-release
 ```
 
-Or run all at once:
-```bash
-TAG="v$(date +"%Y.%m").$(($(git tag -l "v$(date +"%Y.%m").*" | wc -l)+1))" && git tag $TAG && git push origin --tags && gh release create $TAG --generate-notes && gh release view $TAG --web
-```
+**What the command does:**
+1. 🔍 Auto-detects Docker image name from repository (docker-java → beevelop/java)
+2. 🏷️ Generates new calendar version tag (e.g., v2025.08.1)
+3. 📝 Updates all version references in README.md automatically
+4. 💾 Creates conventional commit with README changes
+5. 🚀 Creates and pushes the new tag
+6. 🎉 Creates GitHub release with auto-generated notes
+7. 🌐 Opens release page in browser
+
+**Requirements:**
+- Clean working directory (no uncommitted changes)
+- GitHub CLI (`gh`) installed and authenticated
+- Works with any `beevelop/docker-*` repository
