@@ -8,9 +8,9 @@
     "release:dry": "release-it --dry-run"
   },
   "devDependencies": {
-    "release-it": "^17.0.0",
-    "release-it-calver-plugin": "^2024.1.0",
-    "@release-it/conventional-changelog": "^8.0.0"
+    "@release-it/conventional-changelog": "^8.0.0",
+    "@mulrajgupta208/release-it-calver-plugin": "^1.0.7",
+    "release-it": "^17.0.0"
   },
   "repository": {
     "type": "git",
