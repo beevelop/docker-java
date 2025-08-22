@@ -10,24 +10,30 @@
 
 ![beevelop/java](/icon.png?raw=true)
 
-# Java / OpenJDK 17.0
+# Docker OpenJDK 17 - Java Development Environment
 
-> ⚠️ Due to the approaching EOL of Java 11 we switched to Java 17. Please check your toolchain for compatibility before upgrading to the v2024.* releases.
+> Production-ready OpenJDK 17 Docker image with Maven, Gradle, and Ant for Java application development and CI/CD pipelines.
 
-### Pull, build or run this image
+## Important Note
+
+⚠️ **Java Version Change**: Migrated from Java 11 to Java 17 due to Java 11 EOL. Check your toolchain compatibility before upgrading to v2024.* releases.
+
+## Usage
+
+### Pull and Run
 
 ```bash
-# pull the most recent tag / release    
+# Pull the latest release
 docker pull beevelop/java:v2025.08.3
 
-# or run the image interactively
-docker run --rm --name beevelop -it beevelop/java:v2025.08.3 bash
+# Run interactively
+docker run --rm -it beevelop/java:v2025.08.3 bash
 
-# or build the image from GitHub
+# Build from source
 docker build -t beevelop/java github.com/beevelop/docker-java
 ```
 
-### Or use as base image
+### Use as Base Image
 
 ```Dockerfile
 FROM beevelop/java:v2025.08.3
@@ -35,32 +41,22 @@ FROM beevelop/java:v2025.08.3
 
 ---
 
-![Beevelop's Docker Image Hierarchy](https://gist.githubusercontent.com/beevelop/b0cddab7209a683c77560d06ff00bc8e/raw/15429ee1d02e2c4dc019b760ca8c7ceff5911b82/hierarchy.png)
+# All Docker Images
+
+| Badge | Pulls | Build Status | Release Date | Release |
+| --- | --- | --- | --- | --- |
+| [![base](https://img.shields.io/badge/beevelop%2Fbase-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-base) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/base.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-base/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-base?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-base.svg?style=flat-square) |
+| [![java](https://img.shields.io/badge/beevelop%2Fjava-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-java) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/java.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-java/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-java?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-java.svg?style=flat-square) |
+| [![android](https://img.shields.io/badge/beevelop%2Fandroid-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-android) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/android.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-android/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-android?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-android.svg?style=flat-square) |
+| [![android-nodejs](https://img.shields.io/badge/beevelop%2Fandroid_nodejs-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-android-nodejs) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/android-nodejs.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-android-nodejs/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-android-nodejs?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-android-nodejs.svg?style=flat-square) |
+| [![cordova](https://img.shields.io/badge/beevelop%2Fcordova-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-cordova) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/cordova.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-cordova/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-cordova?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-cordova.svg?style=flat-square) |
+| [![ionic](https://img.shields.io/badge/beevelop%2Fionic-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-ionic) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/ionic.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-ionic/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-ionic?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-ionic.svg?style=flat-square) |
+| [![nginx-basic-auth](https://img.shields.io/badge/beevelop%2Fnginx_basic_auth-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-nginx-basic-auth) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/nginx-basic-auth.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-nginx-basic-auth/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-nginx-basic-auth?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-nginx-basic-auth.svg?style=flat-square) |
 
 ---
 
-### Use tags where possible, because...
+![Beevelop's Docker Image Hierarchy](https://gist.githubusercontent.com/beevelop/b0cddab7209a683c77560d06ff00bc8e/raw/15429ee1d02e2c4dc019b760ca8c7ceff5911b82/hierarchy.png)
+
+### Use tags where possible, because
 
 ![One does not simply use latest](https://i.imgflip.com/1fgwxr.jpg)
-
-## Automated Release
-
-Create a new release with calendar versioning (vYYYY.MM.MICRO) using the universal Bocker Release tool:
-
-```bash
-bocker-release
-```
-
-**What the command does:**
-1. 🔍 Auto-detects Docker image name from repository (docker-java → beevelop/java)
-2. 🏷️ Generates new calendar version tag (e.g., v2025.08.1)
-3. 📝 Updates all version references in README.md automatically
-4. 💾 Creates conventional commit with README changes
-5. 🚀 Creates and pushes the new tag
-6. 🎉 Creates GitHub release with auto-generated notes
-7. 🌐 Opens release page in browser
-
-**Requirements:**
-- Clean working directory (no uncommitted changes)
-- GitHub CLI (`gh`) installed and authenticated
-- Works with any `beevelop/docker-*` repository
